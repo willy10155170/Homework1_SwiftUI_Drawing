@@ -13,7 +13,10 @@ struct ContentView: View {
             //bg and text-------------------------------------------------------------------------------------
             Image("Patrick_Star27s_Rock_in_Season_8")
                 .resizable()
-                //.aspectRatio(contentMode: .fit)
+                .scaledToFill()
+                .frame(minWidth: 0, maxWidth: .infinity,
+                minHeight: 0, maxHeight: .infinity)
+                .ignoresSafeArea()
             Group{
                 Text("啊你以為我不在這裡")
                     .font(Font.system(size: 30))
