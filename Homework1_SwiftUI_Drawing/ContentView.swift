@@ -10,6 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
+            //bg and text-------------------------------------------------------------------------------------
+            Image("Patrick_Star27s_Rock_in_Season_8")
+                .resizable()
+                //.aspectRatio(contentMode: .fit)
+            Group{
+                Text("啊你以為我不在這裡")
+                    .font(Font.system(size: 30))
+                    .offset(x: 0, y: -350)
+                    
+            }
             //patrick star------------------------------------------------------------------------------------
             Group{
                 Path {path in //body
@@ -35,7 +45,7 @@ struct ContentView: View {
                     path.addQuadCurve(to: CGPoint(x: 200, y: 210), control: CGPoint(x: 260, y: 220))
                 }
                 .fill(Color(red: 0.98, green: 0.56, blue: 0.49))
-                
+
                 Path {path in //body stroke
                     path.move(to: CGPoint(x:200, y:210))
                     path.addQuadCurve(to: CGPoint(x: 80, y: 330), control: CGPoint(x: 150, y: 200))
@@ -59,17 +69,17 @@ struct ContentView: View {
                     path.addQuadCurve(to: CGPoint(x: 200, y: 210), control: CGPoint(x: 260, y: 220))
                 }
                 .stroke()
-                
+
                 Path { path in
                     path.move(to: CGPoint(x: 151, y: 410))
                     path.addLine(to: CGPoint(x: 265, y: 405))
                     path.addQuadCurve(to: CGPoint(x: 217, y: 420), control: CGPoint(x: 240, y: 480))
                     path.move(to: CGPoint(x: 223, y: 406))
                     path.addQuadCurve(to: CGPoint(x: 165, y: 409), control: CGPoint(x: 200, y: 480))
-                    
+
                 }
                 .fill(Color(red: 1, green: 1, blue: 1))
-                
+
                 Path { path in
                     path.move(to: CGPoint(x: 336, y: 650))
                     path.addQuadCurve(to: CGPoint(x: 354, y: 645), control: CGPoint(x: 354, y: 655))
@@ -112,7 +122,7 @@ struct ContentView: View {
                 Path(ellipseIn: CGRect(x: 214, y: 609, width: 15, height: 10)).fill(Color(red:0.94, green: 0.45, blue: 0.39))
             }
             //-----------------------------------------------------------------------------------------
-            //pants
+            //pants------------------------------------------------------------------------------------
             Group{
                 
                 Path { path in
