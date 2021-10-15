@@ -159,6 +159,21 @@ struct ContentView: View {
                 }
                 .stroke()
             }
+            
+            Group{
+                Fish()
+                    .fill(Color(red: 0.8, green: 1, blue: 1))
+                    .offset(x: 10, y:100)
+                Fish()
+                    .fill(Color(red: 0.8, green: 0.5, blue: 1))
+                    .offset(x: 120, y:150)
+                Fish()
+                    .fill(Color(red: 0.2, green: 1, blue: 0.4))
+                    .offset(x: 250, y:70)
+                Fish()
+                    .fill(Color(red: 0.8, green: 0.1, blue: 0.5))
+                    .offset(x: 280, y:250)
+            }
         }
     }
         
