@@ -120,9 +120,14 @@ struct ContentView: View {
                 }.stroke()
                 Path(ellipseIn: CGRect(x: 213, y: 408, width: 5, height: 5))
                 Path(ellipseIn: CGRect(x: 225, y: 408, width: 5, height: 5))
-                Path(ellipseIn: CGRect(x: 210, y: 239, width: 10, height: 15)).fill(Color(red:0.94, green: 0.45, blue: 0.39))
+                //Path(ellipseIn: CGRect(x: 210, y: 239, width: 10, height: 15)).fill(Color(red:0.94, green: 0.45, blue: 0.39))
                 Path(ellipseIn: CGRect(x: 113, y: 551, width: 7, height: 10)).fill(Color(red:0.94, green: 0.45, blue: 0.39))
                 Path(ellipseIn: CGRect(x: 214, y: 609, width: 15, height: 10)).fill(Color(red:0.94, green: 0.45, blue: 0.39))
+                Group{
+                    SpotView(positionX:0, positionY: 0, width: 10, height: 10)
+                    SpotView(positionX:10, positionY: 50, width: 10, height: 10)
+                    
+                }
             }
             //-----------------------------------------------------------------------------------------
             //pants------------------------------------------------------------------------------------
@@ -195,5 +200,22 @@ struct FishView: View {
             .rotationEffect(.degrees(rotationDegrees))
             .position(x: positionX, y: positionY)
             .shadow(radius: 10)
+    }
+}
+
+
+
+struct SpotView: View {
+    var positionX: CGFloat
+    var positionY: CGFloat
+    var rotationDegrees: Double = 0
+    let width: CGFloat
+    let height: CGFloat
+    var body: some View {
+        Spot()
+            .fill(Color(red: 0.94, green: 0.45, blue: 0.39))
+            .frame(width: width, height: height)
+            .rotationEffect(.degrees(rotationDegrees))
+            .position(x: positionX, y: positionY)
     }
 }
