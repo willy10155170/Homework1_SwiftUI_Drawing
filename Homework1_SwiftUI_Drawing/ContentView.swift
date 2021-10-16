@@ -161,9 +161,7 @@ struct ContentView: View {
             }
             
             Group{
-                Fish()
-                    .fill(Color(red: 0.8, green: 1, blue: 1))
-                    .offset(x: 10, y:100)
+                FishView(positionX: 300, positionY: 600, width: 50)
                 Fish()
                     .fill(Color(red: 0.8, green: 0.5, blue: 1))
                     .offset(x: 120, y:150)
@@ -182,5 +180,20 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct FishView: View {
+    var positionX: CGFloat
+    var positionY: CGFloat
+    var rotationDegrees: Double = 0
+    let width: CGFloat
+    var body: some View {
+        Fish()
+            .fill(Color(red: 0, green: 1, blue: 1))
+            .frame(width: width, height: width * 9 / 8)
+            .rotationEffect(.degrees(rotationDegrees))
+            .position(x: positionX, y: positionY)
+            .shadow(radius: 10)
     }
 }
