@@ -14,6 +14,7 @@
 		B471C2FB2718354600E10EDC /* Homework1_SwiftUI_DrawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471C2FA2718354600E10EDC /* Homework1_SwiftUI_DrawingTests.swift */; };
 		B471C3062718354600E10EDC /* Homework1_SwiftUI_DrawingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471C3052718354600E10EDC /* Homework1_SwiftUI_DrawingUITests.swift */; };
 		B476B6D3271AE38B007B336D /* PatrickStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476B6D2271AE38B007B336D /* PatrickStarView.swift */; };
+		B476B6D9271AF041007B336D /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476B6D8271AF041007B336D /* Spot.swift */; };
 		B4B583B5271A1A3200F67291 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B583B4271A1A3200F67291 /* Fish.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		B471C3052718354600E10EDC /* Homework1_SwiftUI_DrawingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework1_SwiftUI_DrawingUITests.swift; sourceTree = "<group>"; };
 		B471C3072718354600E10EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B476B6D2271AE38B007B336D /* PatrickStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatrickStarView.swift; sourceTree = "<group>"; };
+		B476B6D8271AF041007B336D /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		B4B583B4271A1A3200F67291 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 			children = (
 				B471C2E82718353100E10EDC /* Homework1_SwiftUI_DrawingApp.swift */,
 				B471C2EA2718353100E10EDC /* ContentView.swift */,
+				B476B6D8271AF041007B336D /* Spot.swift */,
 				B476B6D2271AE38B007B336D /* PatrickStarView.swift */,
 				B4B583B4271A1A3200F67291 /* Fish.swift */,
 				B471C2EC2718354500E10EDC /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				B471C2EB2718353100E10EDC /* ContentView.swift in Sources */,
 				B4B583B5271A1A3200F67291 /* Fish.swift in Sources */,
+				B476B6D9271AF041007B336D /* Spot.swift in Sources */,
 				B471C2E92718353100E10EDC /* Homework1_SwiftUI_DrawingApp.swift in Sources */,
 				B476B6D3271AE38B007B336D /* PatrickStarView.swift in Sources */,
 			);
